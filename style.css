@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f8f8f8;
+  }
+  
+  #numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .number {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 36px;
+    border: 3px solid #333;
+    margin: 5px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  
+  #bonus {
+    border-color: #f00;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  label{
+    margin-top: 40px;
+  }
+  /* モバイルビュー対応 */
+  @media (max-width: 767px) {
+    h1{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    .number {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 20px;
+    }
+  
+    button {
+      padding: 8px 16px;
+      font-size: 16px;
+    }
+  }
+  
